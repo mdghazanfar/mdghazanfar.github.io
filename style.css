@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: mediumseagreen;
+}
+
+header {
+    width: 100%;
+    /* height: vh; */
+    background-color: #1a52f9;
+    /* background-image: linear-gradient(to left, #fff 70%, #14bcdd 50%);*/
+    background-color: #FEE140;
+    background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
+    position: relative;
+}
+
+.logo {
+    width: 40%;
+    color: #fff;
+    background-image: linear-gradient(#8d8d8d, #854fee);
+    padding-left: 100%;
+    box-sizing: border-box;
+}
+
+.logo h1 {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    animation: aagepiche 2s linear infinite;
+    animation-direction: alternate;
+}
+
+@keyframes aagepiche {
+    from {
+        padding-left: 40px;
+    }
+    to {
+        padding-right: 40px;
+    }
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    columns: #000;
+    font-weight: 900;
+    font-size: 17;
+    position: relative;
+}
+
+nav a:first-child {
+    color: #4458dc;
+}
+
+nav a::before {
+    content: " ";
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 0;
+    height: 1px;
+    border-bottom: 2px solid #4458dc;
+    transition: all 0.4s linear;
+}
+
+nav a:hover:before {
+    width: 100%;
+}
+
+main {
+    /* height: 8; */
+    background-color: dodgerblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+}
+
+.rightside {
+    border-radius: 0% 100% 0% 100% / 100% 41% 59% 0%;
+    background-color: #134a55;
+}
+
+.rightside img {
+    max-width: 400px;
+    height: 400px;
+}
+
+.leftside {
+    columns: #000;
+    text-transform: uppercase;
+}
+
+.leftside h3 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.leftside h3:after {
+    content: "";
+    width: 450px;
+    height: 3px;
+    position: absolute;
+    top: 43%;
+    left: 37%;
+    background: rgb(3, 29, 114);
+}
+
+.leftside h1 {
+    margin-top: 20px;
+    font-size: 70px;
+    margin-bottom: 25px;
+}
+
+.leftside h2 {
+    margin-bottom: 35px;
+    font-weight: 500;
+    white-space: 4px;
+}
+
+.nevsection {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.log {
+    grid-column: 1/2;
+    padding: 10px;
+}
+
+nav {
+    grid-column: 2/3;
+    padding: 10px 40px 10px 10px;
+    justify-self: end;
+}
+
+footer {
+    height: 10vh;
+    text-decoration: none;
+    background-color: mintcream;
+    font-size: 40px;
+    text-align: left;
+}
+
+a:hover {
+    color: red;
+}
